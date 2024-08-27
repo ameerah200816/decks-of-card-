@@ -1,0 +1,57 @@
+
+.deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.card {
+    background-color: #0c9e0a;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.suit-hearts {
+    color: red;
+}
+
+.suit-diamonds {
+    color: red;
+}
+
+.suit-clubs {
+    color: black;
+}
+
+.suit-spades {
+    color: black;
+}
+.card::before {
+    content: "deck of cards"; 
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.suit-hearts::before {
+    content: "hearts";
+}
+
+.suit-diamonds::before {
+    content: "diamonds"; 
+}
+
+.suit-clubs::before {
+    content: "clubs"; 
+}
+
+.suit-spades::before {
+    content: "spades";
+}
+
+
